@@ -1,1 +1,1 @@
-waitress-serve --listen=*:8000 visit-to.wsgi:applicationweb: gunicorn goto.wsgi --log-file-
+waitress-serve --listen=*:8000 goto.wsgi:applicationweb: gunicorn goto.wsgi --log-file-

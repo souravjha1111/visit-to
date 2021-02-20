@@ -1,0 +1,11 @@
+{% extends "urlshortner/base.html" %}
+{% block content %}
+
+<div class="center"> 
+    <form method='POST' action='.' style="margin-left: 150px; margin-right: 100px" >
+        {% csrf_token %}
+        {{form.as_p}}
+        <input style="margin-left: 100px;"  type="submit" value="Shorten">
+    </form>
+</div>
+{% endblock content %}
